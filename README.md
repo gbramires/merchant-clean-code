@@ -83,6 +83,21 @@ Responsável por apresentar os dados ao usuário.
 
 As rotas são definidas utilizando o Framework NodeJS Express e permitem a comunicação entre as requisições HTTP do cliente e a aplicação.
 
+local: [{
+    method: POST,
+    url: http://localhost:3000/release/debit,
+    body: { releaseName: 'myRelease', amount: 100 },
+    response: {
+        debitRelease: {
+            _id: uuid
+            releaseName: 'string'
+            amount: 100
+        }
+    }
+
+} ]
+    
+
 ## TESTES
 
 Foram realizados testes unitários para todas as funcionalidades do sistema, abrangendo os cenários possíveis e impossíveis, garantindo a robustez e qualidade da solução.
@@ -94,7 +109,7 @@ Para executar a aplicação, siga os seguintes passos:
 - Faça o clone do repositório em sua máquina local;
     
     ```jsx
-    git clone 
+    git clone https://github.com/gbramires/merchant-clean-code.git
     ```
     
 - Navegue até a pasta da aplicação por meio do terminal e execute o comando abaixo para instalar as dependências necessárias;
@@ -153,14 +168,14 @@ Para executar a aplicação, siga os seguintes passos:
 
 A solução desenvolvida atende aos requisitos de negócio e técnicos exigidos, entregando um sistema de alta qualidade, fácil manutenção e escalabilidade. Com a utilização de conceitos como Clean Architecture, SOLID, Design Patterns e Padrões de Arquitetura, foi criada uma arquitetura de software completa e robusta. Com isso, é possível garantir a eficiência e a previsibilidade dos recursos financeiros de qualquer negócio.
 
-## INSTRUÇÕES DE USO DE DOCKER
+<!-- ## INSTRUÇÕES DE USO DE DOCKER  TODO  ainda não foi implementado
 
 Para executar a aplicação via Docker, siga os seguintes passos:
 
 1. Faça o clone do repositório em sua máquina local;
 2. Navegue até a pasta raiz do projeto por meio do terminal;
 3. Execute os comando "docker-compose build" e "docker-compose up" para construir as imagens dos serviços e subir os containers.
-4. Acesse a aplicação em [http://localhost:3000](http://localhost:3000/)
+4. Acesse a aplicação em [http://localhost:3000](http://localhost:3000/) -->
 
 ## REFERÊNCIAS
 
