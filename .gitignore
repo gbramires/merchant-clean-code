@@ -3,7 +3,7 @@
 Thumbs.db
 *.swp
 quarantine.*
-db/*.db
+temp/app.db
 
 # Dependências
 /node_modules

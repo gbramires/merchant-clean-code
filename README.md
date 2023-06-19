@@ -118,7 +118,9 @@ Para executar a aplicação, siga os seguintes passos:
     npm i
     ```
     
-- Para subir as migrações do banco de dados em ambiente de desenvolvimento, utilizando o Knex com o banco de dados SQLite3, execute o seguinte comando na pasta raiz do projeto:
+- Para subir as migrações do banco de dados em ambiente de desenvolvimento, utilizando o Knex com o banco de dados SQLite3, execute o seguinte comando na pasta raiz do projeto 
+
+**criar uma pasta na raiz chamada "temp" para o banco** :
     
     ```
     npm run knex -- migrate:latest
