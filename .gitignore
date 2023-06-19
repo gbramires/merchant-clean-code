@@ -1,0 +1,26 @@
+# Arquivos temporários
+.DS_Store
+Thumbs.db
+*.swp
+quarantine.*
+db/*.db
+
+# Dependências
+/node_modules
+
+# Arquivos gerados pelo ambiente de desenvolvimento
+/.idea
+/.vscode
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Arquivos de build
+/build
+/dist
+
+# Outros arquivos que devem ser ignorados
+*.log
+reports
+coverage
